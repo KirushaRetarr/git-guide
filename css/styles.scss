@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary-background-color: #fff;
+$primary-dark-blue-color: #141024;
+$primary-red-color: #D52027;
+
+:root {
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  width:100%;
+  margin: 0 auto;
+  background-color: $primary-background-color;
+
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 92px;
+    width: 100%;
+    height: 945px;
+    background-color: $primary-dark-blue-color;
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 22%;
+
+      margin-top: 40px;
+      width: 100%;
+
+      picture a {
+        font-family: "Jost", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: $primary-background-color;
+        text-decoration: none;
+        padding: 5px;
+      }
+
+      ul {
+        display: inline-flex;
+        padding: 5px;
+        gap: 40px;
+
+        a {
+          font-family: "Jost", sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          color: $primary-background-color;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $primary-red-color;
+          transition: 0.8s;
+        }
+      }
+
+      span {
+        font-size: 30px;
+        font-weight: 600;
+        color: $primary-background-color;
+        padding: 5px;
+      }
+    }
+
+    .greeting-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      height: 100%;
+      width: 100%;
+
+      .greeting-text-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        height: 450px;
+        width: 530px;
+
+        h1 {
+          font-size: 70px;
+          color: $primary-background-color;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 300;
+          color: $primary-background-color;
+        }
+
+        button {
+          width: 260px;
+          height: 80px;
+          background-color: transparent;
+          border: 1px solid $primary-red-color;
+          border-radius: 5px;
+          color: $primary-background-color;
+        }
+
+        button:hover {
+          background-color: $primary-red-color;
+          transition: 0.8s;
+          cursor: pointer;
+        }
+      }
+      .greeting-img-container {
+        position: relative;
+        height: 772.5px;
+
+        .girl-img {
+          position: absolute;
+          top: 0;
+          left: 120px;
+          width: 420px;
+          height: 772.5px;
+        }
+
+        .ellipse-img {
+          margin-top: 80px;
+          width: 650px;
+          height: 650px;
+        }
+      }
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 614px;
+    width: 100%;
+
+    .info-text {
+      height: 144px;
+      width: 1160px;
+      p {
+        width: 890px;
+        font-size: 30px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .statistic {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      width: 1160px;
+      height: 170px;
+
+      .statistic-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+
+        span {
+          font-weight: 600;
+          font-size: 70px;
+          color: $primary-red-color;
+        }
+
+        p {
+          font-size: 18px;
+          color: #000;
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  .after-course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 485px;
+
+    .course-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      width: 1150px;
+      height: 280px;
+
+      span {
+        font-weight: 600;
+        font-size: 50px;
+        color: $primary-dark-blue-color;
+      }
+
+      .course-info {
+        .course-card {
+          span {
+            font-weight: 600;
+            font-size: 24px;
+            color: $primary-dark-blue-color;
+          }
+        }
+      }
+    }
+  }
+}
